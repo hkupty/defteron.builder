@@ -11,7 +11,7 @@
   [["-p" "--proto DIR" "Directory where protobuf files are stored"
     :default "proto"]
    ["-c" "--compiled DIR" "Directory where compiled java classes will be put"
-    :default "compiled"]
+    :default "classes"]
    ["-h" "--help"]])
 
 (def ^:dynamic proto-dir nil)
@@ -26,7 +26,7 @@
     (file-seq proto-dir)))
 
 (defn -main [& args]
-  (let [{:keys [options summary]} (parse-opts cli-options args)
+  (let [{:keys [options summary]} (parse-opts args cli-options)
         temp-dir (new-temp-dir)]
     (if (:help options)
       (println summary)
