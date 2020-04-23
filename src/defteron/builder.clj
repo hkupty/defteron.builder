@@ -40,5 +40,4 @@
               (proto-files))
         (println ::compiling.java)
         (javac (.toString temp-dir)
-               {:compile-path (.getAbsolutePath classes-dir)})))
-    (Files/delete temp-dir)))
+               {:compile-path (.getAbsolutePath classes-dir)})))))
