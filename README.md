@@ -11,7 +11,7 @@ Add `defteron.builder` in your `deps.edn` file:
 ;; :aliases {
 :protoc {:extra-paths ["proto"]
          :extra-deps {defteron.builder {:git/url "https://github.com/hkupty/defteron.builder"
-                                        :sha "03bd825ce1d3133c4197f5be55ce58f9263afebd"}}
+                                        :sha "9b6dcb3227fd46c92d8e64afab536a6eed25f983"}}
          :main-opts ["-m" "defteron.builder"
                      "-p" "proto" ;; Same as :extra-paths, where your .proto files are stored
                      "-c" "classes" ;; Where compiled java representation will be put
