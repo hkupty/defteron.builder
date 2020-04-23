@@ -1,6 +1,7 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.10.1"}
         org.clojure/tools.cli {:mvn/version "1.0.194"}
+        org.slf4j/slf4j-nop {:mvn/version "1.7.30"}
         badigeon/badigeon {:git/url "https://github.com/EwenG/badigeon.git"
                            :sha "1edf7ae465db870ec0066f28226edb9b04873b70"
                            :tag "0.0.11"} }
