@@ -26,7 +26,7 @@
     (file-seq proto-dir)))
 
 (defn -main [& args]
-  (let [{:keys [options summary]} (parse-opts args)
+  (let [{:keys [options summary]} (parse-opts cli-options args)
         temp-dir (new-temp-dir)]
     (if (:help options)
       (println summary)
